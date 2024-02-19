@@ -255,7 +255,7 @@ body {
         top: 0;
         width: 100%;
         z-index: 10; /* Ensures header is above other content */
-        
+        height: 80px;
     }
 
     .card-stacks-container {
@@ -306,17 +306,6 @@ body {
     font-size: 16px;
     color: #000;
 }
-        
-    @media screen and (max-width: 768px) {
-    .blurred-text-box {
-        margin-top: 20px;
-        border-radius: 15px; /* Slightly smaller radius */
-        padding: 15px; /* Less padding */
-        margin-bottom: 15px; /* Smaller space */
-        max-width: 90%; /* Use percentage for better adaptation */
-        font-size: 14px; /* Smaller font size */
-    }
-}    
 
 
 
@@ -325,47 +314,50 @@ body {
     
     
 </head>
+
+
 <body class="flex flex-col">
     <div class="relative w-full">
-        <header class="absolute top-0 left-0 right-0 w-full bg-white bg-opacity-50 backdrop-blur-lg z-20">
+        <header class="absolute top-0 left-0 right-0 w-full z-20 border-b border-gray-200">
             <nav class="container mx-auto px-6 py-3">
                 <div class="flex items-center justify-between">
-                    <a href="#" class="text-xl font-semibold text-black">esImErKki</a>
+                    <a href="#" class="text-3xl font-thin text-black">esImErKki</a>
                     <div class="block md:hidden">
-                        <button id="menu-toggle" class="text-white focus:outline-none">
+                        <button id="menu-toggle" class="text-black focus:outline-none">
                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
                            </svg>
                         </button>
-
                     </div>
                     <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
-                                <a href="index.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold" aria-current="page">Home</a>
+                                <a href="index.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="ominaisuudet.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold">Ominaisuudet</a>
+                                <a href="ominaisuudet.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin">Ominaisuudet</a>
                             </li>
                             <li>
-                                <a href="otayhteytta.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold">Tietoa meistä</a>
+                                <a href="otayhteytta.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin">Tietoa meistä</a>
                             </li>
                         </ul>
-                        
-                        
                     </div>
                 </div>
             </nav>
         </header>
+    </div>
+
       
-        <div class="relative w-full h-screen bg-no-repeat bg-cover flex flex-col items-center justify-center" style="background-image: url('./assets/images/beegee2.png');">
+        <div class="relative w-full h-screen bg-no-repeat bg-cover flex flex-col items-center justify-center" style="background-image: url('./assets/images/beegee3.png');">
             <!-- Blurred Text Box -->
             <div class="blurred-text-box">
                 <p>Yrityksemme, Agile Solutions Inc., on markkinoiden johtava agile-tekniikoiden tarjoaja. Meidän agile-menetelmämme, agile-prosessimme ja agile-asenteemme ovat sydämessämme. Agile on enemmän kuin vain sana meille; se on koko olemassaolomme ydin. Agile, agile, agile – se kaikuu toimistomme käytävillä, agile-projektitiimeissämme ja agile-tuotekehityksessämme.
 
                     Olemme omistautuneet agile-filosofialle, joka korostaa jatkuvaa iterointia, joustavuutta, asiakaslähtöisyyttä ja reagointikykyä muutoksiin. Meidän agile-tiimimme ovat koulutettuja agile-menetelmiin, kuten Scrumiin ja Kanbaniin, varmistaen, että agile-periaatteet ovat jokaisen projektimme ytimessä. Agile-menetelmämme avulla olemme saavuttaneet huomattavia menestyksiä monilla aloilla, tarjoten agile-ratkaisuja, jotka täyttävät asiakkaidemme moninaiset tarpeet.
                     
-                    Asiakkaamme arvostavat meidän agile-sitoutumistamme, sillä se tarkoittaa, että olemme valmiita mukautumaan nopeasti heidän tarpeidensa mukaisesti.</p>
+                    Asiakkaamme arvostavat meidän agile-sitoutumistamme, sillä se tarkoittaa, että olemme valmiita mukautumaan nopeasti heidän tarpeidensa mukaisesti, tarjoten agile-tukea ja agile-ratkaisuja, jotka ovat räätälöityjä heidän liiketoimintaansa varten. Tämä agile-lähestymistapa on auttanut meitä rakentamaan pitkäaikaisia suhteita asiakkaisiimme ja saavuttamaan jatkuvaa kasvua agile-markkinoilla.
+                    
+                    Agile Solutions Inc. on sitoutunut olemaan agile-pioneeri.</p>
             </div>
             <!-- Button placed under the text box -->
             <a href="#contact-form" class="feature-link">
@@ -394,6 +386,6 @@ body {
         </div>
 
     
-        <script src="./src/scripts/main.js"></script>
+        <script src="../src/scripts/main.js"></script>
     </body>
     </html>
