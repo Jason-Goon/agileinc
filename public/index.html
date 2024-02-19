@@ -235,7 +235,7 @@ body {
 
 @media (max-width: 768px) {
     .relative.w-full {
-        background-image: url('./assets/images/beegee2.png'); /* Specify the background image */
+        background-image: url('./assets/images/beegee1.png'); /* Specify the background image */
         background-repeat: repeat; /* This will make the image repeat */
         background-size: auto; /* Adjust if you need the images to display at their natural size */
         background-attachment: scroll; /* Allows the background to move with the scrolling content */
@@ -255,13 +255,13 @@ body {
         top: 0;
         width: 100%;
         z-index: 10; /* Ensures header is above other content */
-        
+        height: 80px;
     }
 
     .card-stacks-container {
         display: block; /* Use block layout for straightforward stacking */
         width: 95%; /* Full width to ensure it fits within viewport */
-        margin-top: 1450px; /* Header's height plus desired space */
+        margin-top: 1300px; /* Header's height plus desired space */
         margin-bottom: 20px; /* Keep increased margin for visual separation */
         margin-left: auto; /* Center container */
         margin-right: auto; /* Center container */
@@ -300,40 +300,43 @@ body {
     
     
 </head>
+
+
 <body class="flex flex-col">
     <div class="relative w-full">
-        <header class="absolute top-0 left-0 right-0 w-full bg-white bg-opacity-50 backdrop-blur-lg z-20">
+        <header class="absolute top-0 left-0 right-0 w-full z-20 border-b border-gray-200">
             <nav class="container mx-auto px-6 py-3">
                 <div class="flex items-center justify-between">
-                    <a href="#" class="text-xl font-semibold text-black">esImErKki</a>
+                    <a href="#" class="text-3xl font-thin text-black">esImErKki</a>
                     <div class="block md:hidden">
-                        <button id="menu-toggle" class="text-white focus:outline-none">
+                        <button id="menu-toggle" class="text-black focus:outline-none">
                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
                            </svg>
                         </button>
-
                     </div>
                     <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
-                                <a href="index.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold" aria-current="page">Home</a>
+                                <a href="index.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="ominaisuudet.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold">Ominaisuudet</a>
+                                <a href="ominaisuudet.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin">Ominaisuudet</a>
                             </li>
                             <li>
-                                <a href="otayhteytta.html" class="py-3 px-5 text-black hover:text-gray-800 text-lg font-semibold">Tietoa meistä</a>
+                                <a href="otayhteytta.html" class="py-3 px-5 text-black hover:text-gray-800 text-xl font-thin">Tietoa meistä</a>
                             </li>
                         </ul>
-                        
-                        
                     </div>
                 </div>
             </nav>
         </header>
+    </div>
+
+
+
       
-        <div class="relative w-full h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee2.png');">
+        <div class="relative w-full h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee1.png');">
             <div class="card-stacks-container absolute inset-0 flex items-center justify-center">
                 <main class="flex flex-1 items-center justify-center w-full">
                     <section class="flex flex-col md:flex-row justify-center items-center w-full">
@@ -440,6 +443,6 @@ body {
         <footer class="bg-white">
             <!-- Footer content here -->
         </footer>
-        <script src="./src/scripts/main.js"></script>
+        <script src="../src/scripts/main.js"></script>
     </body>
     </html>
