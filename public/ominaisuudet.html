@@ -261,7 +261,7 @@ body {
     .card-stacks-container {
         display: block; /* Use block layout for straightforward stacking */
         width: 95%; /* Full width to ensure it fits within viewport */
-        margin-top: 1450px; /* Header's height plus desired space */
+        margin-top: 1300px; /* Header's height plus desired space */
         margin-bottom: 20px; /* Keep increased margin for visual separation */
         margin-left: auto; /* Center container */
         margin-right: auto; /* Center container */
@@ -291,6 +291,20 @@ body {
     }
 
 
+}
+
+.blurred-text-box {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Space between text box and button */
+    text-align: center;
+    max-width: 500px; /* Adjust as needed */
+    font-size: 16px;
+    color: #000;
 }
 
 
@@ -332,19 +346,14 @@ body {
                 </div>
             </nav>
         </header>
-        <div class="pt-[56px] h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee2.png'); background-position: center; background-size: cover;">
 
+        <div class="pt-[56px] h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee2.png');">
             <a href="#first-feature" class="feature-link">
                 <span>Tutustu Ominaisuuksiin</span>
             </a>
         </div>
-        
-
-
-
-
-
-
+      
+       
         <main>
             <!-- Combined Features and About Us Section -->
             <section id="features-about" class="container mx-auto px-6 py-10 bg-white">
@@ -382,48 +391,7 @@ body {
                 </div>
             </section>
         </main>
-        
-        
     
-
-    <footer class="bg-white">
-        <div class="container mx-auto px-6 pt-10 pb-6">
-            <div class="flex justify-center"> <!-- Center the form container -->
-                <div class="w-full max-w-md"> <!-- Restrict form width and centralize -->
-                    <div class="mb-6">
-                        <h2 class="text-center text-gray-700 text-sm font-bold mb-2">Ota yhteyttä</h2>
-                        <form action="#" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                            <input type="text" name="name" placeholder="Nimi" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                            <input type="email" name="email" placeholder="Email" class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline">
-                            <textarea name="message" placeholder="Viesti" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-                            <button type="submit" style="background-color: #fcfcfc;" class="w-full text-gray-800 font-bold py-3 px-6 rounded-lg mt-3 hover:bg-blue-700 transition ease-in-out duration-300">
-                                älä paina tätä
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-    
-
-    <script src="../src/scripts/main.js"></script>
-</body>
-</html>
-        
-        
-        
-        
-    
-
-    <footer class="bg-white">
-        <div class="container mx-auto px-6 pt-10 pb-6">
-            
-            </div>
-        </footer>
-    
-    
-
-    <script src="./src/scripts/main.js"></script>
-</body>
-</html>
+        <script src="./src/scripts/main.js"></script>
+    </body>
+    </html>
