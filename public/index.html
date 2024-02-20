@@ -179,7 +179,7 @@
         background-color: transparent;
         color: rgb(0, 0, 0);
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 100;
         text-decoration: none;
         overflow: visible; /* Ensure shadows aren't clipped */
     }
@@ -215,11 +215,6 @@
   position: relative;
 }
 
-#menu-toggle {
-  position: absolute;
-  right: 20px; /* Adjust as necessary */
-  top: 20px; /* Adjust as necessary */
-}
 
 
   
@@ -235,7 +230,7 @@ body {
 
 @media (max-width: 768px) {
     .relative.w-full {
-        background-image: url('./assets/images/beegee1.png'); /* Specify the background image */
+        background-image: url('./assets/images/beegee2.png'); /* Specify the background image */
         background-repeat: repeat; /* This will make the image repeat */
         background-size: auto; /* Adjust if you need the images to display at their natural size */
         background-attachment: scroll; /* Allows the background to move with the scrolling content */
@@ -255,13 +250,13 @@ body {
         top: 0;
         width: 100%;
         z-index: 10; /* Ensures header is above other content */
-       
+    
     }
 
     .card-stacks-container {
         display: block; /* Use block layout for straightforward stacking */
         width: 95%; /* Full width to ensure it fits within viewport */
-        margin-top: 1600px; /* Header's height plus desired space */
+        margin-top: 1300px; /* Header's height plus desired space */
         margin-bottom: 20px; /* Keep increased margin for visual separation */
         margin-left: auto; /* Center container */
         margin-right: auto; /* Center container */
@@ -293,6 +288,26 @@ body {
 
 }
 
+#menu-toggle {
+  position: absolute;
+  right: 20px; /* Adjust as necessary */
+  top: 20px; /* Adjust as necessary */
+}
+
+.blurred-text-box {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Space between text box and button */
+    text-align: center;
+    max-width: 500px; /* Adjust as needed */
+    font-size: 16px;
+    color: #000;
+}
+
 
 
     </style>
@@ -300,6 +315,12 @@ body {
     
     
 </head>
+
+  
+    
+    
+</head>
+
 
 
 <body class="flex flex-col">
@@ -335,114 +356,54 @@ body {
 
 
 
-      
-        <div class="relative w-full h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee1.png');">
-            <div class="card-stacks-container absolute inset-0 flex items-center justify-center">
-                <main class="flex flex-1 items-center justify-center w-full">
-                    <section class="flex flex-col md:flex-row justify-center items-center w-full">
-                        <!-- Card Stack 1 -->
-                        <div class="card-stack w-full md:w-auto" id="stack1">
-                            <div class="next-arrow">↓</div> <!-- Next Arrow -->
-                            <!-- Card 1 -->
-                            <div class="card active">
-                                <div class="card-image">
-                                    <img src="./assets/images/huomentad2.png" alt="Website 1 Desktop View">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/huomentam.png" alt="Website 1 Mobile View">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Additional Card for testing in Stack 1 -->
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./assets/images/huomentadd3.png" alt="Website 1 Desktop View Duplicate">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>DIFFERENT PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/huomentam2.png" alt="Website 1 Mobile View Duplicate">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        
 
-                        <!-- Card Stack 2 -->
-                        <div class="card-stack w-full md:w-auto" id="stack2">
-                            <div class="next-arrow">↓</div> <!-- Next Arrow -->
-                            <!-- Card 1 -->
-                            <div class="card active">
-                                <div class="card-image">
-                                    <img src="./assets/images/huomentad2.png" alt="Website 1 Desktop View">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/huomentam.png" alt="Website 1 Mobile View">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Additional Card for testing in Stack 1 -->
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./assets/images/huomentadd3.png" alt="Website 1 Desktop View Duplicate">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>DIFFERENT PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE PAGE</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/huomentam2.png" alt="Website 1 Mobile View Duplicate">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-stack w-full md:w-auto" id="stack3">
-                            <div class="next-arrow">↓</div> <!-- Next Arrow for Stack 2 -->
-                            <!-- Card 1 for Stack 2 -->
-                            <div class="card active">
-                                <div class="card-image">
-                                    <img src="./assets/images/featured.png" alt="Website 2 Desktop View">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>FEATURES FEATURES FEATURES FEATURES FEATURES FEATURES</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/featured2.png" alt="Website 2 Mobile View">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Additional Card for testing in Stack 2 -->
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="./assets/images/nytid.png" alt="Website 2 Desktop View Duplicate">
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <p>GPT GPT GPT GPT GPT GPT GPT GPT GPT GPT GPT GPT GPT GPT</p>
-                                    </div>
-                                    <div class="card-mobile-view">
-                                        <img src="./assets/images/gpt.png" alt="Website 2 Mobile View Duplicate">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </main>
-            </div>
+        <div class="pt-[56px] h-screen bg-no-repeat bg-cover flex items-center justify-center" style="background-image: url('./assets/images/beegee4.png');">
+            <a href="ominaisuudet.html" class="feature-link">
+                <span>Tutustu Ominaisuuksiin</span>
+            </a>
         </div>
-        <footer class="bg-white">
-            <!-- Footer content here -->
-        </footer>
+
+        <main>
+            <!-- Combined Features and About Us Section -->
+            <section id="features-about" class="container mx-auto px-6 py-10 bg-white">
+                <!-- Feature 1 with ID for Direct Navigation -->
+                <div id="first-feature" class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
+                    <div class="md:w-1/2 p-4 flex justify-center">
+                        <img class="rounded-lg" src="./assets/images/house.png" alt="Feature Image">
+                    </div>
+                    <div class="md:w-1/2 p-4 flex flex-col justify-center items-center text-center">
+                        <h2 class="text-2xl text-gray-900 font-bold mb-3">Osta nettisivut</h2>
+                        <p class="text-gray-600">Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
+                    <div class="md:w-1/2 p-4 flex justify-center">
+                        <img class="rounded-lg" src="./assets/images/coffee.png" alt="Feature 2 Image">
+                    </div>
+                    <div class="md:w-1/2 p-4 flex flex-col justify-center items-center text-center">
+                        <h2 class="text-2xl text-gray-900 font-bold mb-3">Hyvää Huomenta</h2>
+                        <p class="text-gray-600">Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut Osta nettisivut</p>
+                    </div>
+                </div>
+            
+                <!-- About Us as a Feature with ID for Direct Navigation -->
+                <div id="about-us" class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
+                    <div class="md:w-1/2 p-4 flex justify-center">
+                        <img src="./assets/images/laptop.png" alt="About Us" class="max-w-full h-auto rounded-lg">
+                    </div>
+                    <div class="md:w-1/2 p-4 flex flex-col justify-center items-center text-center">
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">Tietoa meistä</h3>
+                        <p class="text-gray-600">Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja Tehdään nettisivuja</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+      
+       
+    
         <script src="../src/scripts/main.js"></script>
     </body>
     </html>
