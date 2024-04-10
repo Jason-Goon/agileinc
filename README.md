@@ -2,7 +2,7 @@
 
 This project represents a step forward in my exploration of Tailwind CSS, focusing on animations and interactive elements. The website features a series of animated cards that showcase my ability to integrate motion within web interfaces effectively.
 
-![eSimeRkkI Animation Cards](./assets/images/animation-cards-screenshot.png)
+![eSimeRkkI Animation Cards](./assets/images/screenshot1.png)
 
 ## Features
 
@@ -13,14 +13,14 @@ This project represents a step forward in my exploration of Tailwind CSS, focusi
 
 ## Getting Started
 
-To experience the eSimeRkkI Animation Cards website, visit the live version hosted on GitHub Pages at [https://agileinc.pages.dev/]
+To experience the eSimeRkkI Animation Cards website, visit the live version hosted on GitHub Pages at https://agileinc.pages.dev/
 
 
 # eSimeRkkI Animaatiokorttien Verkkosivusto
 
 Tämä projekti edustaa askelta eteenpäin Tailwind CSS:n tutkimisessani, keskittyen animaatioihin ja interaktiivisiin elementteihin. Verkkosivusto sisältää joukon animoituja kortteja, jotka esittelevät kykyäni integroida liike verkkokäyttöliittymiin tehokkaasti.
 
-![eSimeRkkI Animaatiokortit](./assets/images/animation-cards-screenshot.png)
+![eSimeRkkI Animation Cards](./assets/images/screenshot2.png)
 
 ## Ominaisuudet
 
