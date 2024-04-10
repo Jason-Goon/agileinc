@@ -6,15 +6,14 @@
     <title>eSimeRkkI</title>
     <link href="./assets/styles/tailwind.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/images/faavi.png">
-    <style>
-
-
-
+   
+    
+<style>
 .card-stacks-container {
     position: relative;
     padding: 20px;
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); /* For Safari compatibility */
+    -webkit-backdrop-filter: blur(15px); /* Safari */
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
     margin: auto;
@@ -29,23 +28,20 @@
 }
 
 .card-stack {
-    width: 300px; /* This width applies to larger screens */
-    height: 500px; /* This height is for visibility on larger screens */
+    width: 300px; 
+    height: 500px; 
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Ensures cards are stacked vertically within the stack */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    margin: 50px; /* Adjusts space around each card stack */
+    margin: 50px; 
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    -webkit-backdrop-filter: blur(20px); /*Safari */
     background-color: rgba(255, 255, 255, 0.3);
 }
-
-
-
 
 .card {
     position: absolute;
@@ -57,60 +53,56 @@
     visibility: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2); /* More transparent background */
-    will-change: transform, top; /* Hint for performance optimization */
-    transform: translate3d(0, 0, 0); /* Trigger GPU acceleration */
+    background-color: rgba(255, 255, 255, 0.2); 
+    will-change: transform, top; 
+    transform: translate3d(0, 0, 0); /* GPU acceleration */
 }
 
 
 .card.active {
     top: 0;
-    visibility: visible; /* Active card is visible */
-    z-index: 2; /* Ensure it's above non-active cards */
-    transition-delay: 0s; /* Apply transitions immediately for active card */
+    visibility: visible; 
+    z-index: 2; 
+    transition-delay: 0s; 
 }
 
 
 
-
-
-/* Define the animations for sliding in and out */
 @keyframes slideIn {
     from {
-        transform: translateY(100%) scale(0.8); /* Start below and scaled down */
+        transform: translateY(100%) scale(0.8); 
     }
     to {
-        transform: translateY(0) scale(1); /* End centered and scaled to normal */
+        transform: translateY(0) scale(1); 
     }
 }
 
 @keyframes slideOut {
     to {
-        transform: translateY(-100%) scale(0.8); /* Exit upwards and scale down */
+        transform: translateY(-100%) scale(0.8); 
     }
 }
 
 .card-image img {
-    width: 100%; /* Adjust based on your layout needs */
+    width: 100%; 
     display: block;
 }
-
-/* Adjust card content to display text and mobile view side by side */
+        
 .card-content {
     display: flex;
-    flex-direction: row; /* Ensure side-by-side layout */
+    flex-direction: row; 
     padding: 10px;
-    justify-content: space-between; /* Maintain original spacing */
+    justify-content: space-between; 
 }
 
 .card-text {
     flex: 1;
     padding: 0 5px;
     display: flex;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    text-align: center; /* Ensure text within is centered */
-    margin-top: 20px; /* Increased top margin */
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 .card-mobile-view {
@@ -118,21 +110,15 @@
     padding: 0 5px;
     display: flex;
     justify-content: center;
-    align-items: center; /* This helps center the image vertically if needed */
+    align-items: center;
 }
 
 .card-mobile-view img {
     margin-top: 24px;
-    border-radius: 10px; /* Rounded corners for the mobile view image */
-    max-width: 100%; /* Ensure the image is responsive within its container */
-    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; 
+    max-width: 100%; 
+    height: auto; 
 }
-
-
-
-/* Styling adjustments for the next arrow */
-
-/* Keyframe Animations for Card Transitions */
 
 .slide-in {
     animation: slideIn 0.5s forwards;
@@ -142,31 +128,27 @@
     animation: slideOut 0.5s forwards;
 }
 
-
-
-/* Styling adjustments for the next arrow */
 .next-arrow {
     position: absolute;
-    bottom: 10px; /* Ensure it's towards the bottom of the card stack */
-    right: 50%; /* Center the button horizontally within the card stack */
-    transform: translateX(50%); /* Adjust translation to perfectly center */
-    background-color: #000000; /* Use a bright color for visibility */
-    color: #fff; /* Ensure the arrow symbol is white for contrast */
+    bottom: 10px; 
+    right: 50%; 
+    transform: translateX(50%); 
+    background-color: #000000; 
+    color: #fff; 
     padding: 8px;
-    border-radius: 50%; /* Circular shape */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Add a shadow for depth */
-    font-size: 24px; /* Increase font size for visibility */
-    width: 40px; /* Set a specific width */
-    height: 40px; /* Set a specific height */
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+    font-size: 24px; 
+    width: 40px;
+    height: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; /* Indicate it's clickable */
-    z-index: 100; /* Ensure it's above other elements */
+    cursor: pointer; 
+    z-index: 100; 
 }
 
 
-/* Keyframe Animations for Card Transitions */
 
 
 
@@ -181,19 +163,18 @@
         font-size: 16px;
         font-weight: 100;
         text-decoration: none;
-        overflow: visible; /* Ensure shadows aren't clipped */
+        overflow: visible; 
     }
 
-    /* Box with increased opacity and visible outline */
     .feature-link::before, .feature-link::after {
         content: '';
         position: absolute;
-        background: rgba(255, 255, 255, 0.7); /* Increased opacity for visibility */
-        width: calc(100% + 4px); /* Extend size for shadow visibility */
+        background: rgba(255, 255, 255, 0.7); 
+        width: calc(100% + 4px); 
         height: calc(100% + 4px);
-        margin-left: -2px; /* Adjust position to center */
+        margin-left: -2px; 
         margin-top: -2px;
-        box-shadow: 0 0 0 2px rgb(250, 250, 250); /* Simulate border around the box */
+        box-shadow: 0 0 0 2px rgb(250, 250, 250); 
     }
 
     .feature-link::before {
@@ -216,73 +197,64 @@
 }
 
 
-
-  
-
-        /* Ensure background image covers but is always fully visible */
-
-
-
-/* Ensure background image covers but is always fully visible */
 body {
-    background-color: #ffffff; /* Ensures the whole page has a white background */
+background-color: #ffffff; 
 }
 
 @media (max-width: 768px) {
     .relative.w-full {
-        background-image: url('./assets/images/beegee2.png'); /* Specify the background image */
-        background-repeat: repeat; /* This will make the image repeat */
-        background-size: auto; /* Adjust if you need the images to display at their natural size */
-        background-attachment: scroll; /* Allows the background to move with the scrolling content */
+        background-image: url('./assets/images/beegee2.png'); 
+        background-repeat: repeat; 
+        background-size: auto; 
+        background-attachment: scroll; 
     }
 
     body, html {
-        min-height: 100%; /* Ensure the full height is covered */
+        min-height: 100%; 
         background-image: url('./assets/images/beegee2.png');
-        background-repeat: repeat; /* Ensure the background image repeats */
-        background-size: auto; /* Allow the natural size of the image to be used, enabling it to repeat */
-        background-attachment: scroll; /* Ensure background scrolls with the page */
-    }
+        background-repeat: repeat; 
+        background-size: auto; 
+        background-attachment: scroll; 
 
 
     header {
-        position: fixed; /* Keeps the header at the top */
+        position: fixed; 
         top: 0;
         width: 100%;
-        z-index: 10; /* Ensures header is above other content */
+        z-index: 10; 
     
     }
 
     .card-stacks-container {
-        display: block; /* Use block layout for straightforward stacking */
-        width: 95%; /* Full width to ensure it fits within viewport */
-        margin-top: 1300px; /* Header's height plus desired space */
-        margin-bottom: 20px; /* Keep increased margin for visual separation */
-        margin-left: auto; /* Center container */
-        margin-right: auto; /* Center container */
-        overflow-x: hidden; /* Prevent horizontal overflow */
-        min-height: 100vh; /* Ensure container stretches at least the full height of the viewport */
-        position: relative; /* Ensures it follows the normal document flow */
+        display: block; 
+        width: 95%; 
+        margin-top: 1300px; 
+        margin-bottom: 20px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        overflow-x: hidden; 
+        min-height: 100vh; 
+        position: relative; 
     }
 
 
     .card-stack {
-        display: block; /* Block layout for direct vertical stacking */
-        width: 85%; /* Ensure stacks do not overflow the viewport */
-        margin: 40px 0; /* Increased margin for better separation */
+        display: block; 
+        width: 85%; 
+        margin: 40px 0; 
         min-height: 550px;
     }
 
     .card {
-        display: block; /* Ensure cards are displayed in a block layout */
-        width: 100%; /* Full width for alignment within stacks */
-        margin-bottom: 20px; /* Increased margin for spacing between cards */
+        display: block; 
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
-    /* Responsive adjustments for content within cards */
+ 
     .card-content, .card-text, .card-mobile-view, .card img {
-        width: 100%; /* Responsive width for all content */
-        box-sizing: border-box; /* Include padding and border in width */
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
 
@@ -290,8 +262,8 @@ body {
 
 #menu-toggle {
   position: absolute;
-  right: 20px; /* Adjust as necessary */
-  top: 20px; /* Adjust as necessary */
+  right: 20px; 
+  top: 20px; 
 }
 
 .blurred-text-box {
@@ -308,20 +280,8 @@ body {
     color: #000;
 }
 
-
-
-    </style>
+</style>
     
-    
-    
-</head>
-
-  
-    
-    
-</head>
-
-
 
 <body class="flex flex-col">
     <div class="relative w-full">
@@ -365,9 +325,7 @@ body {
         </div>
 
         <main>
-            <!-- Combined Features and About Us Section -->
             <section id="features-about" class="container mx-auto px-6 py-10 bg-white">
-                <!-- Feature 1 with ID for Direct Navigation -->
                 <div id="first-feature" class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
                     <div class="md:w-1/2 p-4 flex justify-center">
                         <img class="rounded-lg" src="./assets/images/house.png" alt="Feature Image">
@@ -378,7 +336,7 @@ body {
                     </div>
                 </div>
                 
-                <!-- Feature 2 -->
+         
                 <div class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
                     <div class="md:w-1/2 p-4 flex justify-center">
                         <img class="rounded-lg" src="./assets/images/coffee.png" alt="Feature 2 Image">
@@ -389,7 +347,7 @@ body {
                     </div>
                 </div>
             
-                <!-- About Us as a Feature with ID for Direct Navigation -->
+        
                 <div id="about-us" class="flex flex-wrap mb-20 bg-white rounded-lg shadow-2xl">
                     <div class="md:w-1/2 p-4 flex justify-center">
                         <img src="./assets/images/laptop.png" alt="About Us" class="max-w-full h-auto rounded-lg">
