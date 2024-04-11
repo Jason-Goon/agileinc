@@ -13,7 +13,7 @@ This project represents a step forward in my exploration of Tailwind CSS, focusi
 
 ## Getting Started
 
-To experience the eSimeRkkI Animation Cards website, visit the live version hosted on GitHub Pages at https://agileinc.pages.dev/
+To experience the eSimeRkkI Animation Cards website, visit the live version hosted on Cloudflare Pages at https://agileinc.pages.dev/
 
 
 # eSimeRkkI Animaatiokorttien Verkkosivusto
@@ -31,6 +31,6 @@ Tämä projekti edustaa askelta eteenpäin Tailwind CSS:n tutkimisessani, keskit
 
 ## Aloittaminen
 
-Kokeaksesi eSimeRkkI Animaatiokortit -verkkosivuston, vieraile live-versiossa, joka on isännöity GitHub Pagesissa osoitteessa https://agileinc.pages.dev/
+Kokeaksesi eSimeRkkI Animaatiokortit -verkkosivuston, vieraile live-versiossa, joka on isännöity Cloudflare Pages osoitteessa https://agileinc.pages.dev/
 
 
